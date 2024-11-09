@@ -1,14 +1,4 @@
-.title {
-  color: var(--color-text-error);
-  font-size: 3rem;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 1rem;
-}
 
-.description {
-  text-align: center;
-}
 
 :root {
   --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
