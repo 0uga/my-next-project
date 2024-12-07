@@ -16,8 +16,8 @@ type News = {
 };
 
 const data: {
- contens: News[] } = {
-  contens:[
+ contents: News[] } = {
+  contents:[
     {
       id:"1",
       title:
@@ -52,6 +52,8 @@ const data: {
   // HTMLのようなマークアップを書くことができる
   //JavaScriptを書いたり、参照する際には{}で囲む
 export default function Home() {
+  const sliceDate = data.contents.slice(0, 2);
+
   return (
     <>
       <section className={styles.top}>
@@ -72,7 +74,7 @@ export default function Home() {
       <section className={styles.news}>
         <h2 className={styles.newsTitle}>News</h2>
         <ul>
-          {data.contens.map((article) => (
+          {sliceDate.map((article) => (
             <li key={article.id} className={styles.list}>
               <div className={styles.link}>
                 <Image
