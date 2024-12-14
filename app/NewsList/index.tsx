@@ -34,10 +34,23 @@ export default function NewsList({ news }: Props) {
                         />
                         <dl className={styles.content}>
                             <dt className={styles.content}>{article.title}</dt>
-                            <dd className={styles.meta}
+                            <dd className={styles.meta}>
+                                <span className={styles.tag}>{article.category.name}</span>
+                                <span className={styles.date}>
+                                    <Image
+                                        src="/calendar.svg"
+                                        alt=""
+                                        width={16}
+                                        height={16}
+                                        priority
+                                    />
+                                    {article.publishedAt}
+                                </span>
+                            </dd>
                         </dl>
                     </div>
                 </li>
-            )
+            ))}
         </ul>
+    );
 }
