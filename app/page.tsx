@@ -1,6 +1,7 @@
 import styles from "./page.module.css";
 import Image from "next/image";
 
+import ButtonLink from "@/app/_components/ButtonLink";
 
   // JavaScriptの定数や式などを書くことができる
   //const name = "世界";
@@ -104,6 +105,9 @@ export default function Home() {
             </li>
           ))}
         </ul>
+        <div className={styles.newsLink}>
+          <ButtonLink href="/news">もっとみる</ButtonLink>
+        </div>
       </section>
     </>
   );
