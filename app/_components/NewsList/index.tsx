@@ -1,24 +1,16 @@
 import Image from "next/image";
 
 import styles from "./NewsList.module.scss";
+import { News } from "@/app//_libs/microcms";
 
-type news = {
-    id: string;
-    title: string;
-    category: {
-        name: string;
-    };
-    publishedAt: string;
-    createdAt: string;
-}
 
 type Props = {
-    news: news[];
-}
+    news: News[];
+};
 
 export default function NewsList({ news }: Props) {
     if (news.length === 0) {
-        return <div>記事がありません</div>;
+        return <p>記事がありません</p>;
     }
     return (
         <ul>
