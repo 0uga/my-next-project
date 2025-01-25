@@ -16,7 +16,7 @@
     margin-bottom: 1rem;
 }
 
-sub {
+.sub {
     display: flex;
     align-items: center;
     gap: 20px;
@@ -24,7 +24,7 @@ sub {
     justify-content: center;
 }
 
-.sub :before {
+.sub::before {
     content: '';
     display: block;
     height: 1px;
@@ -32,7 +32,7 @@ sub {
     background-color: var(--color-text-unpainted);
 }
 
-.sub :after {
+.sub::after {
     content: '';
     display: block;
     height: 1px;
