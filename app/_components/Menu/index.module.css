@@ -21,14 +21,13 @@
         right: 0;
         bottom: 0;
         background-color: var(--color--bg--painted);
-        color: var(--cloor--text--unpainted);
+        color: var(--color--text--unpainted);
         padding: 24px 16px;
     }
 
     .items {
         flex-direction: column;
         gap: 24px;
-
     }
 
     .button {
