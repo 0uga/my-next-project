@@ -28,6 +28,7 @@
     .items {
         flex-direction: column;
         gap: 24px;
+
     }
 
     .button {
@@ -36,7 +37,7 @@
         border: none;
         cursor: pointer;
     }
-
+    
     .close {
         position: absolute;
         top: 24px;
